@@ -17,7 +17,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number of the command: ");
         int commandNumber = scanner.nextInt();
-
         switch (commandNumber){
             case 0 :
                 remote.execute(commandNumber);

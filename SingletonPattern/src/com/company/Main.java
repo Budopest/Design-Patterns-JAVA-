@@ -9,5 +9,9 @@ public class Main {
     System.out.println(instance.toString());
     System.out.println(instance.getClass().toString());
 
+
+    BillPughSingleton billPughSingleton = BillPughSingleton.getInstance();
+    billPughSingleton.printUsage();
+
     }
 }

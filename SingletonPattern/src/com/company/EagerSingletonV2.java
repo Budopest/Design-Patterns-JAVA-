@@ -1,22 +1,22 @@
 package com.company;
 
-public class EagerSingeltonV2 {
+public class EagerSingletonV2 {
     /*
     * use static block to initialize
     * This allow for Exception Handling
     * Stil can waste resources
     * */
-    private static EagerSingeltonV2 instance;
+    private static EagerSingletonV2 instance;
     static {
         try {
-            instance = new EagerSingeltonV2();
+            instance = new EagerSingletonV2();
         }
         catch (Exception e){
             e.printStackTrace();
         }
     }
-    private EagerSingeltonV2() throws Exception{}
-    public static EagerSingeltonV2 getInstance(){
+    private EagerSingletonV2() throws Exception{}
+    public static EagerSingletonV2 getInstance(){
         return instance;
     }
 

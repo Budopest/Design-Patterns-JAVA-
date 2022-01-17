@@ -1,6 +1,11 @@
 package com.company;
 
 public class LazySingleton {
+    /*
+    * Lazy initialization only when needed
+    * Exceptions can be handleded
+    * Multithreading can break the singleton property
+    * */
 
     private static LazySingleton instance;
     private LazySingleton(){}
